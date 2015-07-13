@@ -10,55 +10,145 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 
 <style type="text/css">
-body{background-color: #f5f5f5;}
+body{background-color: #f5f5f5; line-height: 27px;}
+
+.border-shadow{background-color: #fff; box-shadow: 6px 0 4px -4px #eee, -6px 0 4px -4px #eee; -moz-box-shadow: 6px 0 4px -4px #eee, -6px 0 4px -4px #eee; -webkit-box-shadow: 6px 0 4px -4px #eee, -6px 0 4px -4px #eee; padding: 50px 0;}
+.border-bottom{ border-bottom: 1px solid #d4d4d4; }
+.border-left{ border-left: 1px solid #d4d4d4; }
+.circle{ border: 4px solid white; border-radius: 50%; box-shadow: 0 0 15px rgba(3, 3, 3, 0.3); display: inline; float: left; margin-right: 20px; margin-top: 4px; overflow: hidden; position: relative; width: 150px; height: 150px; }
+.lead-with-less-margin{margin-bottom: 5px;}
+table.table-borderless td, .table.table-borderless th { border: 0 !important; }
+.table.table-borderless {margin-bottom: 0px; }
+
+
+p{line-height: 27px;}
 header{border-bottom: 1px solid #444; padding: 15px 0;}
-.border-shadow{
-	background-color: #fff; 
-	box-shadow: 6px 0 4px -4px #eee, -6px 0 4px -4px #eee; 
-	-moz-box-shadow: 6px 0 4px -4px #eee, -6px 0 4px -4px #eee; 
-	-webkit-box-shadow: 6px 0 4px -4px #eee, -6px 0 4px -4px #eee;
-	padding: 50px 25px;
-}
-.circle-image{border-radius: 75px;}
+#logoline{ text-align: center; }
+#logoline h1 { color: #464646; font-size: 42pt; font-weight: bold; font-family: serif; }
+
+#page{padding: 25px;}
+section{margin: 50px 0;}
+article{padding: 15px 0;}
+
+#social-nav{padding: 0; margin: 0; display: block;}
+#social-nav li{padding: 0; margin: 0 5px 0 0; list-style: none; display: inline-block;}
+#social-nav li a{border: none;}
 </style>
 </head>
 <body>
 
 <div class="container border-shadow">
-	<header>
-		<div class="row">
-			<div class="col-md-7">
-				<img src="gfx/profile-image.jpg" class="circle-image">
-				<h1>Md. Fasihul Kabir</h1>
-			</div>
-			<div class="col-md-5">
-				<dl class="dl-horizontal">
-					<dt>Email:</dt>
-					<dd><a href="mailto:aboutrafi@gmail.com">aboutrafi@gmail.com</a></dd>
-					<dt>LinkedIn:</dt>
-					<dd><a href="https://bd.linkedin.com/in/fkrafi" target="_blank">https://bd.linkedin.com/in/fkrafi</a></dd>
-					<dt>Github:</dt>
-					<dd><a href="http://github.com/fkrafi" target="_blank">http://github.com/fkrafi</a></dd>
-					<dt>Kaggle:</dt>
-					<dd><a href="http://www.kaggle.com/users/182432/fasihul-kabir" target="_blank">http://www.kaggle.com/users/182432/fasihul-kabir</a></dd>
-				</dl>
-			</div>
-		</div>
-		<div>
-			<p class="lead text-justify">To merge motivating ideas &amp; thoughts, techniques, knowledge and experiences for positive contribution towards the system development in the rapidly changing scenario of ICT where my conceptual and analytical skills can be utilized and to further enhance my knowledge and experiences.</p>
-		</div>
-	</header>
+	<div id="logoline" class="border-bottom">
+		<h1>Md. Fasihul Kabir</h1>
+	</div>
+	<div id="page">
+		<section class="row">
+			<aside class="col-md-3">
+				<div class="text-right">
+					<h3>About me</h3>
+					<em>professional profile and contact info</em>
+				</div>
+			</aside>
+			<article class="col-md-9 border-left">
+				<div class="col-md-8">
+					<span class="circle">
+						<img alt="fasihul-kabir-image" src="gfx/profile-image.jpg">
+					</span>
+					<p>To merge motivating ideas &amp; thoughts, techniques, knowledge and experiences for positive contribution towards the system development in the rapidly changing scenario of ICT where my conceptual and analytical skills can be utilized and to further enhance my knowledge and experiences.</p>
+				</div>
+				<div class="col-md-4 text-right">
+					<ul id="social-nav">
+						<li><a href="mailto:aboutrafi@gmail.com" target="_blank" title="gmail"><img src="gfx/gmail.png"></a></li>
+						<li><a href="https://bd.linkedin.com/in/fkrafi" target="_blank" title="LinkedIn"><img src="gfx/linkedin.png"></a></li>
+						<li><a href="https://www.facebook.com/fkrafi" target="_blank" title="facebook"><img src="gfx/fb.png"></a></li>
+						<li><a href="https://twitter.com/fkrafi" target="_blank" title="twitter"><img src="gfx/twitter.png"></a></li>
+						<li><a href="http://github.com/fkrafi" target="_blank"><img src="gfx/github.png"></a></li>
+						<li><a href="http://www.kaggle.com/users/182432/fasihul-kabir" target="_blank"><img src="gfx/kaggle.png"></a></li>
+					</ul>
+				</div>
+			</article>
+		</section>
 
-	<div>
-		<h3>EMPLOYMENT HISTORY</h3>
-		<h4>Software Engineer</h4>
-		<em>Escenic Asia Ltd. (April, 2013 to present)</em>
-		<p>I work in the core RnD team of Escenic Asia Ltd. My key responsibility is to create new features, improve quality and develop plug-ins for our proprietary web CMS (Escenic).</p>
+<!-- 		<section class="row">
+			<aside class="col-md-3 text-right">
+				<h3>My Expertise</h3>
+			</aside>
+			<article class="col-md-9">
+				
+			</article>
+		</section> -->
+
+		<section class="row">
+			<aside class="col-md-3 text-right">
+				<h3>Experience</h3>
+				<em>where I worked</em>
+			</aside>
+			<article class="col-md-9 border-left">
+				<table class="table table-responsive table-borderless">
+					<tbody>
+						<tr>
+							<td class="text-right"><h5><span class="label label-primary">April, 2013 to Present</span></h5></td>
+							<td>
+								<h4><a href="http://www.escenic.com/" target="_blank">Escenic Asia Ltd.</a></h4>
+								<p class="lead lead-with-less-margin">Software Engineer</p>
+								<p>I work in the core RnD team of Escenic Asia Ltd. My key responsibility is to develop different features of the Escenic Content Engine which is a high performance content management system for text, images, audio files, video clips and all the other digital assets that are used on modern websites.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+		</section>
+
+		<section class="row">
+			<aside class="col-md-3 text-right">
+				<h3>Education</h3>
+				<em>my college and high school</em>
+			</aside>
+			<article class="col-md-9 border-left">
+				<table class="table table-responsive table-borderless">
+					<tbody>
+						<tr>
+							<td class="text-right"><h5><span class="label label-primary">2014 to Present</span></h5></td>
+							<td>
+								<h4><a href="http://www.uiubd.com/" target="_blank">United International University</a></h4>
+								<p class="lead lead-with-less-margin">MSc. in Computer Science &amp; Engineering</p>
+								<p><strong>CGPA: </strong>4 (out of 4)</p>
+							</td>
+							
+						</tr>
+						<tr>
+							<td class="text-right"><h5><span class="label label-default">2009 to 2013</span></h5></td>
+							<td>
+								<h4><a href="http://www.aust.edu/" target="_blank">Ahsanullah University of Science &amp; Technology</a></h4>
+								<p class="lead lead-with-less-margin">BSc. in Computer Science &amp; Engineering</p>
+								<p><strong>CGPA: </strong>3.38 (out of 4)</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-right"><h5><span class="label label-default">2006 to 2008</span></h5></td>
+							<td>
+								<h4><a href="http://www.abdurroufcollege.ac.bd/" target="_blank">Birshrestha Munshi Abdur Rouf Rifles College</a></h4>
+								<p class="lead lead-with-less-margin">Higher Secondary Certificate</p>
+								<p><strong>Group: </strong> Science, <strong>Board:</strong> Dhaka, <strong>GPA:</strong> 5(out of 5)</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="text-right"><h5><span class="label label-default">2004 to 2006</span></h5></td>
+							<td>
+								<h4><a href="https://www.facebook.com/junior.laboratory" target="_blank">Junior Laboratory High School</a></h4>
+								<p class="lead lead-with-less-margin">Secondary School Certificate</p>
+								<p><strong>Group:</strong> Science, <strong>Board:</strong> Dhaka, <strong>GPA:</strong> 5(out of 5)</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+		</section>
 	</div>
 
-	<div>
+<!-- 	<div>
 		<h3>TECHNICAL SKILLS</h3>
-		<table class="table table-striped table-responsive table-hover">
+		
 			<tbody>
 				<tr><td>Programming/Scripting Languages</td><td>Java, C, Python</td></tr>
 				<tr><td>JAVA/J2EE Technologies</td><td>JSP, Servlet, JDBC, Jersey, JSTL, Abdera, JUnit, Mokito, jMock, log4j</td></tr>
@@ -74,18 +164,7 @@ header{border-bottom: 1px solid #444; padding: 15px 0;}
 				<tr><td>IDE</td><td>IntelliJ IDEA, Eclipse</td></tr>
 			</tbody>
 		</table>
-	</div>
-
-	<div>
-		<h3>EDUCATIONAL PROFILE</h3>
-		<ul>
-			<li><strong>2009-2013, Ahsanullah University of Science &amp; Technology</strong><br>
-				<strong>Degree:</strong> BSc in Computer Science &amp; Engineering, <strong>CGPA:</strong> 3.38 (out of 4)</li>
-			<li><strong>2006 - 2008, Birshrestha Munshi Abdur Rouf Rifles College</strong><br>
-				<strong>Degree:</strong> Higher Secondary Certificate, Group: Science, <strong>Board:</strong> Dhaka, <strong>GPA:</strong> 5(out of 5)</li>
-			<li><strong>2004 - 2006, Junior Laboratory High School</strong><br><strong>Degree:</strong> Secondary School Certificate, <strong>Group:</strong> Science, <strong>Board:</strong> Dhaka, GPA: 5(out of 5)</li>
-		</ul>
-	</div>
+	</div> -->
 
 	<div>
 		<h3>RESEARCH INTERESTS</h3>
