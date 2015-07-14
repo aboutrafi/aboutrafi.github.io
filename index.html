@@ -19,7 +19,7 @@ body{background-color: #f5f5f5; line-height: 27px;}
 .lead-with-less-margin{margin-bottom: 5px;}
 table.table-borderless td, .table.table-borderless th { border: 0 !important; }
 .table.table-borderless {margin-bottom: 0px; }
-
+.headline{color: #464646; font-family: serif;}
 
 p{line-height: 27px;}
 header{border-bottom: 1px solid #444; padding: 15px 0;}
@@ -28,11 +28,11 @@ header{border-bottom: 1px solid #444; padding: 15px 0;}
 
 #page{padding: 25px;}
 section{margin: 50px 0;}
-article{padding: 15px 0;}
+article{padding: 15px 0 50px 0; min-height: 250px;}
 
-#social-nav{padding: 0; margin: 0; display: block;}
-#social-nav li{padding: 0; margin: 0 5px 0 0; list-style: none; display: inline-block;}
-#social-nav li a{border: none;}
+.inline-nav{padding: 0; margin: 0; display: block;}
+.inline-nav li{padding: 0; margin: 0 5px 5px 0; list-style: none; display: inline-block;}
+.inline-nav li a{border: none;}
 </style>
 </head>
 <body>
@@ -43,21 +43,21 @@ article{padding: 15px 0;}
 	</div>
 	<div id="page">
 		<section class="row">
-			<aside class="col-md-3">
+			<aside class="col-md-4">
 				<div class="text-right">
-					<h3>About me</h3>
+					<h3 class="headline">About me</h3>
 					<em>professional profile and contact info</em>
 				</div>
 			</aside>
-			<article class="col-md-9 border-left">
-				<div class="col-md-8">
+			<article class="col-md-8 border-left">
+				<div class="col-md-7">
 					<span class="circle">
 						<img alt="fasihul-kabir-image" src="gfx/profile-image.jpg">
 					</span>
 					<p>To merge motivating ideas &amp; thoughts, techniques, knowledge and experiences for positive contribution towards the system development in the rapidly changing scenario of ICT where my conceptual and analytical skills can be utilized and to further enhance my knowledge and experiences.</p>
 				</div>
-				<div class="col-md-4 text-right">
-					<ul id="social-nav">
+				<div class="col-md-5 text-right">
+					<ul class="inline-nav">
 						<li><a href="mailto:aboutrafi@gmail.com" target="_blank" title="gmail"><img src="gfx/gmail.png"></a></li>
 						<li><a href="https://bd.linkedin.com/in/fkrafi" target="_blank" title="LinkedIn"><img src="gfx/linkedin.png"></a></li>
 						<li><a href="https://www.facebook.com/fkrafi" target="_blank" title="facebook"><img src="gfx/fb.png"></a></li>
@@ -69,21 +69,12 @@ article{padding: 15px 0;}
 			</article>
 		</section>
 
-<!-- 		<section class="row">
-			<aside class="col-md-3 text-right">
-				<h3>My Expertise</h3>
-			</aside>
-			<article class="col-md-9">
-				
-			</article>
-		</section> -->
-
 		<section class="row">
-			<aside class="col-md-3 text-right">
-				<h3>Experience</h3>
+			<aside class="col-md-4 text-right">
+				<h3 class="headline">Experience</h3>
 				<em>where I worked</em>
 			</aside>
-			<article class="col-md-9 border-left">
+			<article class="col-md-8 border-left">
 				<table class="table table-responsive table-borderless">
 					<tbody>
 						<tr>
@@ -100,11 +91,11 @@ article{padding: 15px 0;}
 		</section>
 
 		<section class="row">
-			<aside class="col-md-3 text-right">
-				<h3>Education</h3>
+			<aside class="col-md-4 text-right">
+				<h3 class="headline">Education</h3>
 				<em>my college and high school</em>
 			</aside>
-			<article class="col-md-9 border-left">
+			<article class="col-md-8 border-left">
 				<table class="table table-responsive table-borderless">
 					<tbody>
 						<tr>
@@ -144,6 +135,75 @@ article{padding: 15px 0;}
 				</table>
 			</article>
 		</section>
+
+		<section class="row">
+			<aside class="col-md-4 text-right">
+				<h3 class="headline">Research interests</h3>
+				<em>subjects I like most</em>
+			</aside>
+			<article class="col-md-8 border-left">
+				<ul class="inline-nav">
+					<li><a href="https://en.wikipedia.org/wiki/Natural_language_processing" target="_blank" class="btn btn-success">Natural Language Processing</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank" class="btn btn-danger">Machine Learning</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank" class="btn btn-warning">Human Computer Interaction</a></li>
+				</ul>
+			</article>
+		</section>
+
+		<section class="row">
+			<aside class="col-md-4 text-right">
+				<h3 class="headline">Competitive programming</h3>
+				<em>programming contents and project shows</em>
+			</aside>
+			<article class="col-md-8 border-left">
+				<ul>
+					<li><strong>Algorithms &amp; Data Structures:</strong> Divide-and-Conquer, Dynamic Programming, Graph Algorithms, Sorting, Searching, String Searching, Backtracking, Brute Force, Number Theory, Computational Geometry etc.</li>
+					<li><strong>Data Structures:</strong> Stack, Queue, Vector, Set, Map, Trie, Suffix Array, Segment Tree, Graph, Disjoint-Set, Binary Indexed Tree  etc</li>
+					<li>
+						<p>Solved problems in various online judge sites and onsite programming contests using C, C++, Java and Python.</p>
+						<ul>
+							<li>UVa Online Judge (<a href="http://uhunt.felix-halim.net/id/45070" target="_blank">http://uhunt.felix-halim.net/id/45070</a>)</li>
+							<li>TJU (<a href="http://acm.tju.edu.cn/acm/user_fkrafi.html" target="_blank">http://acm.tju.edu.cn/acm/user_fkrafi.html</a>)</li>
+							<li>Codeforces (<a href="http://codeforces.com/profile/fkrafi" target="_blank">http://codeforces.com/profile/fkrafi</a>) </li>
+							<li>Codejam (<a href="http://www.go-hero.net/jam/11/name/fkrafi" target="_blank">http://www.go-hero.net/jam/11/name/fkrafi</a>)</li>
+							<li>LightOJ (<a href="http://www.lightoj.com/volume_userstat.php?user_id=1431" target="_blank">http://www.lightoj.com/volume_userstat.php?user_id=1431</a>)</li>
+							<li>Project Euler etc</li>
+						</ul>
+					</li>
+					<li>
+						<p>Obtain different ranks; participated as team leader in different on-site programming contests. Some rankings are:</p>
+						<ul>
+							<li>2nd in AIUPC at AUST, 26th November, 2009</li>
+							<li>22nd in ICPC at NSU, 6th November, 2010</li>
+							<li>2nd in AIUPC at AUST, 26th November, 2010</li>
+							<li>26th in BUET IUPC 2011, 1st December, 2011</li>
+							<li>18th in Quazi Azher Ali Programming Contest 2011, 25th December, 2011</li>
+							<li>34th in ICPC at DIU, 3rd September, 2012</li>
+							<li>16th in Quazi Azher Ali Programming Contest 2013, 6th January, 2013</li>
+						</ul>
+					</li>
+					<li>Trained different teams in Ahsanullah University of Science &amp; Technology. </li>
+					<li>Set Problems for AUST Inter University Programming Contests, 2011 &amp; 2012.</li>
+					<li>10th in Basis Soft Expo 2012, PHP Code Warrior</li>
+					<li>One of the top 11 participants in Therap Java Fest. (<a href="https://github.com/fkrafi/uText">https://github.com/fkrafi/uText</a>)</li>
+					<li>Worked on a project based on Online Sanitation Survey Report in Sanitation Hackathon-12</li>
+				</ul>
+			</article>
+		</section>
+
+		<section class="row">
+			<aside class="col-md-4">
+				<div class="text-right">
+					<h3 class="headline">Publications</h3>
+					<em>conference and journal papers</em>
+				</div>
+			</aside>
+			<article class="col-md-8 border-left">
+				<ul>
+					<li>Kabir, F.; Siddique, S.; Kotwal, M.R.A.; Huda, M.N., <a href="http://ieeexplore.ieee.org/iel7/7088526/7100673/07100687.pdf?arnumber=7100687" target="_blank">"Bangla text document categorization using Stochastic Gradient Descent (SGD) classifier,"</a> Cognitive Computing and Information Processing (CCIP), 2015 International Conference on , vol., no., pp.1,4, 3-4 March 2015</li>
+				</ul>
+			</article>
+		</section>
 	</div>
 
 <!-- 	<div>
@@ -166,12 +226,7 @@ article{padding: 15px 0;}
 		</table>
 	</div> -->
 
-	<div>
-		<h3>RESEARCH INTERESTS</h3>
-		<p>Natural Language Processing, Machine Learning, Human Computer Interaction</p>
-	</div>
-
-	<div>
+<!-- 	<div>
 		<h3>ONLINE CERTIFICATION COURSES</h3>
 		<ul>
 			<li>
@@ -187,45 +242,10 @@ article{padding: 15px 0;}
 				<p>Online course was conducted by Professor Michael Collins. This course covered formalisms such as hidden Markov models, probabilistic context-free grammars, log-linear models, and statistical models for machine translation.</p>
 			</li>
 		</ul>
-	</div>
+	</div> -->
 
-	<div>
-		<h3>Competitive Programming</h3>
-		<ul>
-			<li><strong>Algorithms &amp; Data Structures:</strong> Divide-and-Conquer, Dynamic Programming, Graph Algorithms, Sorting, Searching, String Searching, Backtracking, Brute Force, Number Theory, Computational Geometry etc.</li>
-			<li><strong>Data Structures:</strong> Stack, Queue, Vector, Set, Map, Trie, Suffix Array, Segment Tree, Graph, Disjoint-Set, Binary Indexed Tree  etc</li>
-			<li>
-				<p>Solved problems in various online judge sites and onsite programming contests using C, C++, Java and Python.</p>
-				<ul>
-					<li>UVa Online Judge (<a href="http://uhunt.felix-halim.net/id/45070" target="_blank">http://uhunt.felix-halim.net/id/45070</a>)</li>
-					<li>TJU (<a href="http://acm.tju.edu.cn/acm/user_fkrafi.html" target="_blank">http://acm.tju.edu.cn/acm/user_fkrafi.html</a>)</li>
-					<li>Codeforces (<a href="http://codeforces.com/profile/fkrafi" target="_blank">http://codeforces.com/profile/fkrafi</a>) </li>
-					<li>Codejam (<a href="http://www.go-hero.net/jam/11/name/fkrafi" target="_blank">http://www.go-hero.net/jam/11/name/fkrafi</a>)</li>
-					<li>LightOJ (<a href="http://www.lightoj.com/volume_userstat.php?user_id=1431" target="_blank">http://www.lightoj.com/volume_userstat.php?user_id=1431</a>)</li>
-					<li>Project Euler etc</li>
-				</ul>
-			</li>
-			<li>
-				<p>Obtain different ranks; participated as team leader in different on-site programming contests. Some rankings are:</p>
-				<ul>
-					<li>2nd in AIUPC at AUST, 26th November, 2009</li>
-					<li>22nd in ICPC at NSU, 6th November, 2010</li>
-					<li>2nd in AIUPC at AUST, 26th November, 2010</li>
-					<li>26th in BUET IUPC 2011, 1st December, 2011</li>
-					<li>18th in Quazi Azher Ali Programming Contest 2011, 25th December, 2011</li>
-					<li>34th in ICPC at DIU, 3rd September, 2012</li>
-					<li>16th in Quazi Azher Ali Programming Contest 2013, 6th January, 2013</li>
-				</ul>
-			</li>
-			<li>Trained different teams in Ahsanullah University of Science &amp; Technology. </li>
-			<li>Set Problems for AUST Inter University Programming Contests, 2011 &amp; 2012.</li>
-			<li>10th in Basis Soft Expo 2012, PHP Code Warrior</li>
-			<li>One of the top 11 participants in Therap Java Fest. (<a href="https://github.com/fkrafi/uText">https://github.com/fkrafi/uText</a>)</li>
-			<li>Worked on a project based on Online Sanitation Survey Report in Sanitation Hackathon-12</li>
-		</ul>
-	</div>
 
-	<div>
+	<!-- <div>
 		<h3>Tech Talks</h3>
 		<ul>
 			<li>
@@ -233,14 +253,7 @@ article{padding: 15px 0;}
 				<a href="http://www.slideshare.net/fkrafi1/nltka-tool-fornlp-pycondhaka2014" targe="_blank">NLTK: a tool for Natural Language Processing</a>
 			</li>
 		</ul>
-	</div>
-
-	<div>
-		<h3>Publications</h3>
-		<ul>
-			<li>Kabir, Fasihul, Sabbir Siddique, Mohammed Rokibul Alam Kotwal, and Mohammad Nurul Huda. <a href="http://ieeexplore.ieee.org/iel7/7088526/7100673/07100687.pdf?arnumber=7100687" target="_blank">Bangla Text Document Categorization Using Stochastic Gradient Descent (SGD) Classifier.</a></li>
-		</ul>
-	</div>
+	</div> -->
 </div>
 </body>
 </html>
