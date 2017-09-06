@@ -1,0 +1,14 @@
+{
+	"editions":[
+		{
+			"name": "edition-1",
+			"publishDate": "2017-08-30",
+			"resourceUrl": "http://aboutrafi.name/chimeraly/2017-08-30.zip"
+		},
+		{
+			"name": "edition-2",
+			"publishDate": "2017-09-06",
+			"resourceUrl": "http://aboutrafi.name/chimeraly/2017-09-06.zip"
+		}
+	]
+}
