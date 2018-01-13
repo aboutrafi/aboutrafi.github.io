@@ -4,11 +4,11 @@
 			"tags": ["pepsi", "usa", "2017"],
 			"target_object": {
 				"type": "image",
-				"src": "http://www.aboutrafi.name/images/pepsi2017.jpg"
+				"src": "http://www.aboutrafi.name/4dpaper/images/pepsi2017.jpg"
 			},
 			"projected_object": {
 				"type": "video",
-				"src": "http://www.aboutrafi.name/videos/pepsi2017.mp4"
+				"src": "http://www.aboutrafi.name/4dpaper/videos/pepsi2017.mp4"
 			}
 		},
 		{
@@ -16,11 +16,11 @@
 			"tags": ["bmw", "m5"],
 			"target_object": {
 				"type": "image",
-				"src": "http://www.aboutrafi.name/images/BMW_M5.jpg"
+				"src": "http://www.aboutrafi.name/4dpaper/images/BMW_M5.jpg"
 			},
 			"projected_object": {
 				"type": "video",
-				"src": "http://www.aboutrafi.name/videos/BMW_M5.mp4"
+				"src": "http://www.aboutrafi.name/4dpaper/videos/BMW_M5.mp4"
 			}
 		},
 		{
@@ -28,11 +28,11 @@
 			"tags": ["tesla"],
 			"target_object": {
 				"type": "image",
-				"src": "http://www.aboutrafi.name/images/Tesla.jpg"
+				"src": "http://www.aboutrafi.name/4dpaper/images/Tesla.jpg"
 			},
 			"projected_object": {
 				"type": "video",
-				"src": "http://www.aboutrafi.name/videos/Tesla.mp4"
+				"src": "http://www.aboutrafi.name/4dpaper/videos/Tesla.mp4"
 			}
 		},
 		{
@@ -40,11 +40,11 @@
 			"tags": ["telenor", "4g"],
 			"target_object": {
 				"type": "image",
-				"src": "http://www.aboutrafi.name/images/Telenor4G.jpg"
+				"src": "http://www.aboutrafi.name/4dpaper/images/Telenor4G.jpg"
 			},
 			"projected_object": {
 				"type": "video",
-				"src": "http://www.aboutrafi.name/videos/Telenor4G.mp4"
+				"src": "http://www.aboutrafi.name/4dpaper/videos/Telenor4G.mp4"
 			}
 		},
 		{
@@ -52,11 +52,11 @@
 			"tags": ["kitkat"],
 			"target_object": {
 				"type": "image",
-				"src": "http://www.aboutrafi.name/images/kitkat.jpg"
+				"src": "http://www.aboutrafi.name/4dpaper/images/kitkat.jpg"
 			},
 			"projected_object": {
 				"type": "video",
-				"src": "http://www.aboutrafi.name/videos/kitkat.mp4"
+				"src": "http://www.aboutrafi.name/4dpaper/videos/kitkat.mp4"
 			}
 		}
 	]
