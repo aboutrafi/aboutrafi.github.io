@@ -1,0 +1,64 @@
+{
+	campaigns:[
+		{
+			title: 'Pepsi Commercial 2017',
+			tags: ['pepsi', 'usa', '2017'],
+			target_object: {
+				type: 'image',
+				src: 'http://www.aboutrafi.name/images/pepsi2017.jpg'
+			},
+			projected_object: {
+				type: 'video',
+				src: 'http://www.aboutrafi.name/videos/pepsi2017.mp4'
+			}
+		},
+		{
+			title: 'BMW M5',
+			tags: ['bmw', 'm5'],
+			target_object: {
+				type: 'image',
+				src: 'http://www.aboutrafi.name/images/BMW_M5.jpg'
+			},
+			projected_object: {
+				type: 'video',
+				src: 'http://www.aboutrafi.name/videos/BMW_M5.mp4'
+			}
+		},
+		{
+			title: 'Tesla',
+			tags: ['tesla'],
+			target_object: {
+				type: 'image',
+				src: 'http://www.aboutrafi.name/images/Tesla.jpg'
+			},
+			projected_object: {
+				type: 'video',
+				src: 'http://www.aboutrafi.name/videos/Tesla.mp4'
+			}
+		},
+		{
+			title: 'Telenor 4G',
+			tags: ['telenor', '4g'],
+			target_object: {
+				type: 'image',
+				src: 'http://www.aboutrafi.name/images/Telenor4G.jpg'
+			},
+			projected_object: {
+				type: 'video',
+				src: 'http://www.aboutrafi.name/videos/Telenor4G.mp4'
+			}
+		},
+		{
+			title: 'KitKat',
+			tags: ['kitkat'],
+			target_object: {
+				type: 'image',
+				src: 'http://www.aboutrafi.name/images/kitkat.jpg'
+			},
+			projected_object: {
+				type: 'video',
+				src: 'http://www.aboutrafi.name/videos/kitkat.mp4'
+			}
+		}
+	]
+}
