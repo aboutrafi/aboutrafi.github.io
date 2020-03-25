@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List View</title>
+	<meta charset="utf-8"/>
+<style type="text/css">
+body{padding: 0; margin: 0;}
+ul{padding: 0; margin: 0; list-style: none;}
+li{padding: 0; margin: 0; border-bottom: 1px solid #ccc}
+li:nth-child(even) {background: #FFFFFF}
+li:nth-child(odd) {background: #FFFFEB}
+div{display: flex; justify-content: space-between;}
+h2{margin: 0; padding: 0 10px; color: #0C434D; font-size: 64px;}
+p{margin: 5px 10px; font-size: 42px;}
+</style>
+</head>
+<body>
+
+<ul id="name-list">
+	<li>
+		<div>
+			<h2>Bengali</h2>
+			<h2>Arabic</h2>
+		</div>
+		<p>Bengali Meaning</p>
+	</li>
+	<li>
+		<div>
+			<h2>Bengali</h2>
+			<h2>Arabic</h2>
+		</div>
+		<p>Bengali Meaning</p>
+	</li>
+	<li>
+		<div>
+			<h2>Bengali</h2>
+			<h2>Arabic</h2>
+		</div>
+		<p>Bengali Meaning</p>
+	</li>
+	<li>
+		<div>
+			<h2>Bengali</h2>
+			<h2>Arabic</h2>
+		</div>
+		<p>Bengali Meaning</p>
+	</li>
+</ul>
+
+<script type="text/javascript">
+var names = JSON.parse(`[{"arabic":"الله","bengali":"আল্লাহ","meaning":"আল্লাহ"},{"arabic":"الرحمن","bengali":"আর রাহমান","meaning":"পরম দয়ালু"},{"arabic":"الرحيم","bengali":"আর-রহী'ম","meaning":"অতিশয়-মেহেরবান"},{"arabic":"الملك","bengali":"আল-মালিক","meaning":"সর্বকর্তৃত্বময়"},{"arabic":"القدوس","bengali":"আল-কুদ্দুস","meaning":"নিষ্কলুষ, অতি পবিত্র"},{"arabic":"السلام","bengali":"আস-সালাম","meaning":"নিরাপত্তা-দানকারী, শান্তি-দানকারী"},{"arabic":"المؤمن","bengali":"আল-মু'মিন","meaning":"নিরাপত্তা ও ঈমান দানকারী"},{"arabic":"المهيمن","bengali":"আল-মুহাইমিন","meaning":"পরিপূর্ন রক্ষণাবেক্ষণকারী"},{"arabic":"العزيز","bengali":"আল-আ'জীজ","meaning":"পরাক্রমশালী, অপরাজেয়"},{"arabic":"الجبار","bengali":"আল-জাব্বার","meaning":"দুর্নিবার"},{"arabic":"المتكبر","bengali":"আল-মুতাকাব্বিইর","meaning":"নিরঙ্কুশ শ্রেষ্ঠত্বের অধিকারী"},{"arabic":"الخالق","bengali":"আল-খালিক্ব","meaning":"সৃষ্টিকর্তা"},{"arabic":"البارئ","bengali":"আল-বারী","meaning":"সঠিকভাবে সৃষ্টিকারী"},{"arabic":"المصور","bengali":"আল-মুছউইর","meaning":"আকৃতি-দানকারী"},{"arabic":"الغفار","bengali":"আল-গফ্ফার","meaning":"পরম ক্ষমাশীল"},{"arabic":"القهار","bengali":"আল-ক্বাহার","meaning":"কঠোর"},{"arabic":"الوهاب","bengali":"আল-ওয়াহ্হাব","meaning":"সবকিছু দানকারী"},{"arabic":"الرزاق","bengali":"আর-রজ্জাক্ব","meaning":"রিযিকদাতা"},{"arabic":"الفتاح","bengali":"আল ফাত্তাহ","meaning":"বিজয়দানকারী"},{"arabic":"العليم","bengali":"আল-আ'লীম","meaning":"সর্বজ্ঞ"},{"arabic":"القابض","bengali":"আল-ক্ববিদ্ব'","meaning":"সংকীর্ণকারী"},{"arabic":"الباسط","bengali":"আল-বাসিত","meaning":"প্রশস্তকারী"},{"arabic":"الخافض","bengali":"আল-খফিদ্বু","meaning":"অবনতকারী"},{"arabic":"الرافع","bengali":"আর-রফীই'","meaning":"উন্নতকারী"},{"arabic":"المعز","bengali":"আল-মুই'জ্ব","meaning":"সম্মান-দানকারী"},{"arabic":"المذل","bengali":"আল-মুদ্বি'ল্লু","meaning":"(অবিশ্বাসীদের) বেইজ্জতকারী"},{"arabic":"السميع","bengali":"আস্-সামিই'","meaning":"সর্বশ্রোতা"},{"arabic":"البصير","bengali":"আল-বাছীর","meaning":"সর্ববিষয়-দর্শনকারী"},{"arabic":"الحكم","bengali":"আল-হা'কাম","meaning":"অটল বিচারক"},{"arabic":"العدل","bengali":"আল-আ'দল","meaning":"পরিপূর্ণ-ন্যায়বিচারক"},{"arabic":"اللطيف","bengali":"আল-লাতীফ","meaning":"সকল-গোপন-বিষয়ে-অবগত"},{"arabic":"الخبير","bengali":"আল-খ'বীর","meaning":"সকল ব্যাপারে জ্ঞাত"},{"arabic":"الحليم","bengali":"আল-হা'লীম","meaning":"অত্যন্ত ধৈর্যশীল"},{"arabic":"العظيم","bengali":"আল-আ'জীম","meaning":"সর্বোচ্চ-মর্যাদাশীল"},{"arabic":"الغفور","bengali":"আল-গফুর","meaning":"পরম ক্ষমাশীল"},{"arabic":"الشكور","bengali":"আশ্-শাকুর","meaning":"গুনগ্রাহী"},{"arabic":"العلي","bengali":"আল-আ'লিইউ","meaning":"উচ্চ-মর্যাদাশীল"},{"arabic":"الكبير","bengali":"আল-কাবিইর","meaning":"সুমহান"},{"arabic":"الحفيظ","bengali":"আল-হা'ফীজ","meaning":"সংরক্ষণকারী"},{"arabic":"المقيت","bengali":"আল-মুক্বীত","meaning":"সকলের জীবনোপকরণ-দানকারী"},{"arabic":"الحسيب","bengali":"আল-হাসীব","meaning":"হিসাব-গ্রহণকারী"},{"arabic":"الجليل","bengali":"আল-জালীল","meaning":"পরম মর্যাদার অধিকারী"},{"arabic":"الكريم","bengali":"আল-কারীম","meaning":"সুমহান দাতা"},{"arabic":"الرقيب","bengali":"আর-রক্বীব","meaning":"তত্ত্বাবধায়ক"},{"arabic":"المجيب","bengali":"আল-মুজীব","meaning":"জবাব-দানকারী, কবুলকারী"},{"arabic":"الواسع","bengali":"আল-ওয়াসি'","meaning":"সর্ব-ব্যাপী, সর্বত্র-বিরাজমান"},{"arabic":"الحكيم","bengali":"আল-হাকীম","meaning":"পরম-প্রজ্ঞাময়"},{"arabic":"الودود","bengali":"আল-ওয়াদুদ","meaning":"(বান্দাদের প্রতি) সদয়"},{"arabic":"المجيد","bengali":"আল-মাজীদ","meaning":"সকল-মর্যাদার-অধিকারী"},{"arabic":"الباعث","bengali":"আল-বাই'ছ'","meaning":"পুনুরুজ্জীবিতকারী"},{"arabic":"الشهيد","bengali":"আশ্-শাহীদ","meaning":"সর্বজ্ঞ-স্বাক্ষী"},{"arabic":"الحق","bengali":"আল-হা'ক্ব","meaning":"পরম সত্য"},{"arabic":"الوكيل","bengali":"আল-ওয়াকিল","meaning":"পরম নির্ভরযোগ্য কর্ম-সম্পাদনকারী"},{"arabic":"القوي","bengali":"আল-ক্বউইউ","meaning":"পরম-শক্তির-অধিকারী"},{"arabic":"المتين","bengali":"আল-মাতীন","meaning":"সুদৃঢ়"},{"arabic":"الولي","bengali":"আল-ওয়ালিইউ","meaning":"অভিভাবক ও সাহায্যকারী"},{"arabic":"الحميد","bengali":"আল-হা'মীদ","meaning":"সকল প্রশংসার অধিকারী"},{"arabic":"المحصي","bengali":"আল-মুহছী","meaning":"সকল সৃষ্টির ব্যপারে অবগত"},{"arabic":"المبدئ","bengali":"আল-মুব্দি'","meaning":"প্রথমবার-সৃষ্টিকর্তা"},{"arabic":"المعيد","bengali":"আল-মুঈ'দ","meaning":"পুনরায়-সৃষ্টিকর্তা"},{"arabic":"المحيي","bengali":"আল-মুহ'য়ী","meaning":"জীবন-দানকারী"},{"arabic":"المميت","bengali":"আল-মুমীত","meaning":"মৃত্যু-দানকারী"},{"arabic":"الحي","bengali":"আল-হাইয়্যু","meaning":"চিরঞ্জীব"},{"arabic":"القيوم","bengali":"আল-ক্বাইয়্যুম","meaning":"সমস্তকিছুর ধারক ও সংরক্ষণকারী"},{"arabic":"الواجد","bengali":"আল-ওয়াজিদ","meaning":"অফুরন্ত ভান্ডারের অধিকারী"},{"arabic":"الماجد","bengali":"আল-মাজিদ","meaning":"শ্রেষ্ঠত্বের অধিকারী"},{"arabic":"الواحد","bengali":"আল-ওয়াহি'দ","meaning":"এক ও অদ্বিতীয়"},{"arabic":"الصمد","bengali":"আছ্-ছমাদ","meaning":"অমুখাপেক্ষী"},{"arabic":"القادر","bengali":"আল-ক্বদির","meaning":"সর্বশক্তিমান"},{"arabic":"المقتدر","bengali":"আল-মুক্ব্তাদির","meaning":"নিরঙ্কুশ-সিদ্বান্তের-অধিকারী"},{"arabic":"المقدم","bengali":"আল-মুক্বদ্দিম","meaning":"অগ্রসারক"},{"arabic":"المؤخر","bengali":"আল-মুয়াক্খির","meaning":"অবকাশ দানকারী"},{"arabic":"الأول","bengali":"আল-আউয়াল","meaning":"অনাদি"},{"arabic":"الأخر","bengali":"আল-আখির","meaning":"অনন্ত, সর্বশেষ"},{"arabic":"الظاهر","bengali":"আজ-জ'হির","meaning":"সম্পূর্নরূপে-প্রকাশিত"},{"arabic":"الباطن","bengali":"আল-বাত্বিন","meaning":"দৃষ্টি হতে অদৃশ্য"},{"arabic":"الوالي","bengali":"আল-ওয়ালি","meaning":"সমস্ত-কিছুর-অভিভাবক"},{"arabic":"المتعالي","bengali":"আল-মুতাআ'লি","meaning":"সৃষ্টির গুনাবলীর উর্দ্ধে"},{"arabic":"البر","bengali":"আল-বার্","meaning":"পরম-উপকারী, অণুগ্রহশীল"},{"arabic":"التواب","bengali":"আত্-তাওয়াব","meaning":"তাওবার তাওফিক দানকারী এবং কবুলকারী"},{"arabic":"المنتقم","bengali":"আল-মুনতাক্বিম","meaning":"প্রতিশোধ-গ্রহণকারী"},{"arabic":"العفو","bengali":"আল-আ'ফঊ","meaning":"পরম-উদার"},{"arabic":"الرؤوف","bengali":"আর-রউফ","meaning":"পরম-স্নেহশীল"},{"arabic":"مالك الملك","bengali":"মালিকুল-মুলক","meaning":"সমগ্র জগতের বাদশাহ্"},{"arabic":"ذو الجلال والإكرام","bengali":"যুল-জালালি-ওয়াল-ইকরাম","meaning":"মহিমান্বিত ও দয়াবান সত্তা"},{"arabic":"المقسط","bengali":"আল-মুক্ব্সিত","meaning":"হকদারের হক-আদায়কারী"},{"arabic":"الجامع","bengali":"আল-জামিই'","meaning":"একত্রকারী, সমবেতকারী"},{"arabic":"الغني","bengali":"আল-গণিই'","meaning":"অমুখাপেক্ষী ধনী"},{"arabic":"المغني","bengali":"আল-মুগণিই'","meaning":"পরম-অভাবমোচনকারী"},{"arabic":"المانع","bengali":"আল-মানিই'","meaning":"অকল্যাণরোধক"},{"arabic":"الضار","bengali":"আয্-যর","meaning":"ক্ষতিসাধনকারী"},{"arabic":"النافع","bengali":"আন্-নাফিই'","meaning":"কল্যাণকারী"},{"arabic":"النور","bengali":"আন্-নূর","meaning":"পরম-আলো"},{"arabic":"الهادي","bengali":"আল-হাদী","meaning":"পথ-প্রদর্শক"},{"arabic":"البديع","bengali":"আল-বাদীই'","meaning":"অতুলনীয়"},{"arabic":"الباقي","bengali":"আল-বাক্বী","meaning":"চিরস্থায়ী, অবিনশ্বর"},{"arabic":"الوارث","bengali":"আল-ওয়ারিস'","meaning":"উত্তরাধিকারী"},{"arabic":"الرشيد","bengali":"আর-রাশীদ","meaning":"সঠিক পথ-প্রদর্শক"}]`);
+var list = '';
+for(var i=0; i<names.length; i++) {
+	list += `<li>
+		<div>
+			<h2>${names[i].bengali}</h2>
+			<h2>${names[i].arabic}</h2>
+		</div>
+		<p>${names[i].meaning}</p>
+	</li>`;
+}
+document.getElementById('name-list').innerHTML = list;
+</script>
+
+</body>
+</html>
