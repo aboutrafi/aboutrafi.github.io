@@ -20,7 +20,16 @@
 			.catch(() => {})
 
 		function gotMedia (stream) {
-			var peer1 = new SimplePeer({ initiator: true, stream: stream });
+			var peer1 = new SimplePeer({ 
+				initiator: true, 
+				stream: stream,
+				config: { 
+					iceServers: [
+						{ urls: 'stun:stun.l.google.com:19302' }, 
+						{ urls: 'stun:global.stun.twilio.com:3478?transport=udp' }
+					] 
+				}
+   			});
 			var peer2 = new SimplePeer();
 
 			setStream('local-stream', stream);
