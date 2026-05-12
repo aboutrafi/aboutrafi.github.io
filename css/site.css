@@ -21,7 +21,7 @@ body {
 }
 
 body {
-  font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   background: radial-gradient(circle at top right, #eef2ff 0%, var(--bg) 40%);
   color: var(--text);
   line-height: 1.7;
@@ -118,7 +118,7 @@ img {
 }
 
 .text-right {
-  text-align: left;
+  text-align: right;
 }
 
 .circle {
@@ -258,10 +258,6 @@ li {
   .border-left {
     border-top: 0;
     border-left: 1px solid var(--line);
-  }
-
-  .text-right {
-    text-align: right;
   }
 
   section:first-of-type article {
