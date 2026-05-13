@@ -19,7 +19,7 @@ body {
 }
 
 body {
-  font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: var(--text);
   background:
     radial-gradient(900px 500px at 100% -20%, #dbeafe 0%, transparent 55%),
